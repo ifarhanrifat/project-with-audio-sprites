@@ -1,0 +1,302 @@
+/*
+ * Start Bootstrap - Modern Business (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/************ Global Styles ************/
+html,
+body {
+    height: 100%;
+}
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	background-color: #eee;    
+}
+.page-header {
+	padding-top: 40px;
+	border-bottom: none;
+}
+.subHeader {
+  	height: 10px;
+  	background-color: #bc1912;
+  	border-top: 2px solid #bc1912;
+}
+.contentContainer{
+	margin-top: 20px;
+}
+.buffer{
+	margin: 60px 0px;
+}
+.lengthen-it{
+	min-height: 420px;
+}
+/************ Global Styles ************/
+
+
+
+/************ Navbar Styles ************/
+.navbar-default {
+	background-color: #0b3462;
+	border: none;
+}
+.navbar-default .navbar-collapse {
+    border: none;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ddd;
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+}
+.navbar-default .navbar-nav .open > a:focus {
+    background-color: #0b3462;
+    color: #fff;
+}
+.navbar-default .navbar-nav > a:hover {
+    color: #ddd;
+}
+.navbar-default .navbar-nav > a:focus {
+    background-color: #0b3462;
+    color: #fff;
+}
+.navbar-default .navbar-collapse > li > a {
+    color: #fff;
+}
+.navbar-default .navbar-collapse > li > a:focus {
+    background-color: #0b3462;
+    color: #fff;
+}
+.navbar-toggle {
+	border: none;
+}
+.navbar-toggle:focus {
+    background-color: #0b3462;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.nav .fa{
+	padding-right: 5px;
+}
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+.dropdown-submenu.pull-left {
+    float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+/************ Navbar Styles ************/
+
+
+
+/************ Main Content Styles ************/
+h1{
+	font-size: 48px;
+}
+h2{
+	font-size: 32px;
+}
+h3{
+	font-size: 28px;
+}
+h4{
+	font-size: 18px;
+}
+h5{
+	font-size: 14px;
+}
+/************ Main Content Styles ************/
+
+
+
+/************ Button Styles ************/
+.btn{
+	border-radius: 0;
+}
+.btn-default{
+	border-color: #337ab7;
+	color: #337ab7;
+}
+.btn-default:hover{
+	color: #337ab7;
+	background-color: #f5f5f5;
+	border-color: #337ab7;
+}
+.btn-danger{
+	border-color: #d9534f;
+	color: #d9534f;
+	background-color: #fff;
+}
+.btn-success{
+	border-color: #5cb85c;
+	color: #5cb85c;
+	background-color: #fff;
+}
+.btn-success:hover{
+
+}
+.buttonPushDown{
+	margin: 10px 0px;
+}
+/************ Button Styles ************/
+
+
+
+/************ Footer Styles ************/
+footer {
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    margin-top: 40px;
+    color: #fff;
+    background-color: #0b3462;
+}
+.footer-align{
+	display: block;
+	position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+}
+.sslSticker{
+	text-align: center;
+}
+.copyright{
+	display:block;
+	font-size:12px;
+}
+.copyright a{
+	color: #fff;
+	padding-bottom: 20px;
+}
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+/************ Footer Styles ************/
+
+
+
+/************ Responsive Styles ************/
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+    .little-space{
+		margin-bottom: 10px;
+	}
+	.mdQuestBG{
+		padding: 3px 5px;
+		margin-bottom: 5px;
+		background-color: #eee;
+	}
+	.button-space{
+		margin: 10px 0px;
+	}
+}
+@media(max-width:767px) {
+    #logo{
+      width: 75%;
+    }
+    .hidden-menu {
+		margin-top: 60px;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    	color: #fff;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    	background-color: #0b3462;
+    	color: #ddd;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    	background-color: #0b3462;
+    	color: #fff;
+	}
+	.navbar-default .navbar-nav .open > a:hover {
+    	background-color: #0b3462;
+    	color: #ddd;
+	}
+	.navbar-default .navbar-nav .open > a:focus {
+    	background-color: #0b3462;
+    	color: #fff;
+	}
+	.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    	background-color: #0b3462;
+    	z-index: -1;
+    }
+	.navbar-nav .dropdown-menu .caret {
+		transform: rotate(-90deg);
+    }
+    .buffer{
+		margin: 40px 0px;
+	}
+	.panel > table{
+		font-size: 10px;
+	}
+	.panel-body > td{
+		padding: 0px 5px;
+	}
+	.btn{
+		padding: 5px 7px;
+		margin: 0px 2px;
+	}
+	.expand-button, .widen-button{
+		width: 100%;
+		margin-top: 10px;
+		margin-bottom: -10px;
+	}
+	.buttonPushDown{
+		margin: 10px 0px;
+	}
+	.smQuestBG{
+		padding: 3px 5px;
+		margin-bottom: 5px;
+		background-color: #eee;
+	}
+	.pull-right-lg {
+        float: none !important;
+    }
+    #sm-report{
+		padding: 0px;
+		font-size: 11px;
+	}
+}
+/************ Responsive Styles ************/
