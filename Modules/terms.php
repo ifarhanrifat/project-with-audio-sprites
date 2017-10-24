@@ -10,10 +10,10 @@
 					<div class="terms__cont ">
 						<h2>What is a DSP</h2>
 						<div class="terms__def da mb20">
-							<span class="terms__title" id="dspdef-title" onclick="play('dspdefine')" >Direct Support Professional Definition</span>
+							<span class="terms__title" id="dspdef-title" onclick="play('dspdefine')">Direct Support Professional Definition</span>
 							<span style="display:none;" id="dspdef"> - Direct support professionals or DSPs are people who work directly with people with physical disabilities and/or intellectual disabilities with the aim of assisting the individual to become integrated into his or her community or the least restrictive environment.</span>
 						</div>
-						<div class="terms__def terms__mean">
+						<div class="terms__def terms__mean da--two">
 							<span class="terms__title" id="dspmean-title" onclick="play('dspmeaning')">Direct Support Professional Meaning</span>
 							<span style="display:none;" id="dspmean"> - Direct support professionals do whatever is necessary to assist the people that they work with to live the best and most independent life they possibly can. They do this by being companions, teachers, chauffeurs, cooks, advisors, assistants, maids, and many other things. DSPs are responsible for listening to the person they are working with, learning what their needs, dreams, and goals are, and then coming up with creative solutions to help that person achieve those goals.</span>
 						</div>
@@ -30,7 +30,7 @@
 			</div>
 		</div>		
 	</section>
-	<audio>
+	<audio preload="">
 	  <source src="AreYouReady/audio-terms.mp3" type="audio/mp3"></source>
 	</audio>
 	<div class="mobileplay-holder">
@@ -47,7 +47,7 @@
 </audio>   -->
 
 <style>
-		/*.terms__def.da:before {
+	.terms__def.da:before {
 		content: ".";
 		position: absolute;
 		background-color: transparent;
@@ -58,7 +58,18 @@
 	.terms__def {
 		position: relative;
 	}
-	*/
+	.terms__mean.da--two:before {
+		content: ".";
+		position: absolute;
+		background-color: transparent;
+		width: 100%;
+		height: 100%;
+	}
+
+	.terms__mean {
+		position: relative;
+	}
+	
 
 </style>
 
@@ -66,14 +77,24 @@
 
 <script type="text/javascript">
 
+
+
+
+
+
     var a = document.querySelector('audio'),
     bc = document.querySelector('#playAudioBtns'),
     audiosprite = {
-      'all': [ 0, 185 ],
+      /*'all': [ 0, 185 ],
 	  'clickhereto': [ 0, 5 ],
-      'dspdefine': [ 5.5, 22 ],
-      'dspmeaning': [ 22.5, 56 ],
-	  'moreinfo': [ 56.5, 185.5 ]
+      'dspdefine': [ 5, 22 ],
+      'dspmeaning': [ 22, 56 ],
+	  'moreinfo': [ 56, 185 ]*/
+	  'all': [ 0, 185 ],
+	  'clickhereto': [ 0, 5.5 ],
+      'dspdefine': [ 5.5, 22.5 ],
+      'dspmeaning': [ 22.5, 56.5 ],
+	  'moreinfo': [ 56.5, 185 ]
     },
     end = 0;
 	
@@ -112,26 +133,28 @@
 			if (titleClassDef){
 				$("#dspdef").show();
 			}
-		});
-		
-		var myMeanVar = setInterval(function(){
-		$("#dspmean-title").parent(".terms__def").addClass("active");
-		 $(".terms__def").removeClass('da');			
-		}, 5000);
-		$("#dspmean-title").on('click', function(){
-			var titleClassDef = $("#dspmean-title").parent(".terms__def").hasClass("active");
-			if (titleClassDef){
-				$("#dspmean").show();
-			}
-		});
-		
-		(function(){
+			var myMeanVar = setInterval(function(){
+				$("#dspmean-title").parent(".terms__def").addClass("active");
+				 $(".terms__mean").removeClass('da--two');			
+				}, 16000);
+				$("#dspmean-title").on('click', function(){
+					var titleClassDef = $("#dspmean-title").parent(".terms__def").hasClass("active");
+					if (titleClassDef){
+						$("#dspmean").show();
+					}
+					(function(){
 			var onClickDefFunc = $('#dspdef-title').prop('onclick');
 			$('#dspdef-title').removeProp('onclick');
 			setTimeout(function(){
 				$('#dspdef-title').click(onClickDefFunc);
 			}, 5000);
 		}());
+				});
+		});
+		
+		
+		
+		
 		
 		(function(){
 			var onClickMeanFunc = $('#dspmean-title').prop('onclick');
@@ -145,8 +168,8 @@
 					{
 						var myVar = setInterval(function(){
 							$('.more-info').removeClass('hidden');
-						},30000);
-						setInterval(function(){clearInterval(myVar);},30000);
+						},33000);
+						setInterval(function(){clearInterval(myVar);},33000);
 						firstClick=false;
 						$('.more-info').click(function(e) {
 							$(this).addClass('hidden');
@@ -181,8 +204,9 @@
 
 <script>
 window.onload=function(){
-play('clickhereto');
+	play('clickhereto');
 };
+
 </script>
 
 

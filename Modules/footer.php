@@ -38,15 +38,7 @@
 	
    </div><!--body-wrapper-->
    
-	<!--Bootstrap-->
-    <script src="js/bootstrap.min.js"></script>
-	<!--./Bootstrap-->
 	
-	<!--Major Scripts-->
-	<script src="js/viewportchecker.js"></script>
-    <script src="js/kodeized.js"></script>
-		<script src="js/customized.js"></script>
-	<!--./Major Scripts-->
 	
 	
 	

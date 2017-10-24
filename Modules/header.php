@@ -57,7 +57,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				  </button>
-					<a class="navbar-brand" href="./"><img src="images/itrainLogo.png" alt="logo" class="broken-image"/></a>
+					<a class="navbar-brand" href="begin.php"><img src="images/itrainLogo.png" alt="logo" class="broken-image"/></a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->

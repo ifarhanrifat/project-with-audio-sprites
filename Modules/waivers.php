@@ -66,11 +66,17 @@
     var a = document.querySelector('audio'),
     bc = document.querySelector('#playAudioBtns'),
     audiosprite = {
-      'all': [ 0, 239 ],
-	  'clickhereto': [ 0, 27 ],
-      'family': [ 28, 106 ],
-      'government': [ 107, 182 ],
-	  'money': [ 183, 239 ]
+      /*'all': [ 0, 239 ],
+	  'clickhereto': [ 0, 28 ],
+      'family': [ 28, 106.5 ],
+      'government': [ 107, 183 ],
+	  'money': [ 183, 239 ]*/
+	  
+	  'all': [ 0, 239 ],
+	  'clickhereto': [ 0, 27.5 ],
+      'family': [ 27.5, 106 ],
+      'government': [ 106, 182 ],
+	  'money': [ 182, 239 ]
     },
     end = 0;
 	
@@ -121,8 +127,8 @@ $(window).load(function(){
 					{
 						var myGallTwo = setInterval(function(){
 							$('.gallery-item--two').removeClass('hidden');
-						},75000);
-						setInterval(function(){clearInterval(myGallTwo);},75000);
+						},78000);
+						setInterval(function(){clearInterval(myGallTwo);},78000);
 						
 						$(function(e){
 							var secondClick = true;
@@ -132,8 +138,8 @@ $(window).load(function(){
 								{
 									var myGallThree = setInterval(function(){
 										$('.gallery-item--three').removeClass('hidden');
-									},72000);
-									setInterval(function(){clearInterval(myGallThree);},72000);
+									},76000);
+									setInterval(function(){clearInterval(myGallThree);},76000);
 									
 									$(function(e){
 										var thirdClick = true;

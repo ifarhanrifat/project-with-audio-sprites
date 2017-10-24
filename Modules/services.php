@@ -10,9 +10,9 @@
 						</div>
 						<div class="services__lft col-sm-6">
 							<ul>
-								<li id="residServ" class="serv__def bef"><a href="#" onclick="play('residHabServ')"><i class="fa fa-volume-up hidden"></i>Residential Habilitation and Support Services</a></li>
-								<li id="duties" class="serv__def bef"><a href="#" onclick="play('duties')"><i class="fa fa-volume-up hidden"></i>Duties</a></li>
-								<li id="experience" class="serv__def bef"><a href="#" onclick="play('experience')"><i class="fa fa-volume-up hidden"></i>Experience</a></li>
+								<li id="residServ" class="serv__def bef"><a onclick="play('residHabServ')"><i class="fa fa-volume-up hidden"></i>Residential Habilitation and Support Services</a></li>
+								<li id="duties" class="serv__def bef"><a onclick="play('duties')"><i class="fa fa-volume-up hidden"></i>Duties</a></li>
+								<li id="experience" class="serv__def bef"><a onclick="play('experience')"><i class="fa fa-volume-up hidden"></i>Experience</a></li>
 							</ul>
 						</div>
 						<div class="services__rgt col-sm-6">
@@ -60,8 +60,8 @@
     audiosprite = {
       'all': [ 0, 404],
 	  'clickhereto': [ 0, 49.5 ],
-      'residHabServ': [ 50, 80.5 ],
-      'duties': [ 81, 215 ],
+      'residHabServ': [ 49.5, 80.5 ],
+      'duties': [ 80.5, 215.5 ],
 	  'experience': [ 215.5, 404 ]
     },
     end = 0;
@@ -107,8 +107,8 @@ $(window).load(function(){
 						var myServTwo = setInterval(function(){
 							$('#duties').removeClass('bef').addClass('selected');
 							$('#duties i').removeClass('hidden');
-						},27000);
-						setInterval(function(){clearInterval(myServTwo);},27000);
+						},30000);
+						setInterval(function(){clearInterval(myServTwo);},30000);
 						
 						$(function(e){
 							var secondClick = true;
@@ -119,8 +119,8 @@ $(window).load(function(){
 									var myServThree = setInterval(function(){
 										$('#experience').removeClass('bef').addClass('selected');
 										$('#experience i').removeClass('hidden');
-									},130000);
-									setInterval(function(){clearInterval(myServThree);},130000);
+									},133000);
+									setInterval(function(){clearInterval(myServThree);},133000);
 									
 									$(function(e){
 										var thirdClick = true;
@@ -147,7 +147,7 @@ $(window).load(function(){
 			});	
 				
 			
-		}, 46000);
+		}, 49000);
 		
 	$(".mobile_playSound").click(function (e) {
 		jQuery(this).addClass("hidden");

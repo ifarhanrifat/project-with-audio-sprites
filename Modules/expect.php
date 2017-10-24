@@ -10,10 +10,10 @@
 						</div>
 						<div class="services__lft col-sm-5">
 							<ul>
-								<li id="expPeople" class="serv__def bef"><a href="#" onclick="play('expectPeople')"><i class="fa fa-volume-up hidden"></i>People</a></li>
-								<li id="expSchedule" class="serv__def bef"><a href="#" onclick="play('expectSchedule')"><i class="fa fa-volume-up hidden"></i>Schedule</a></li>
-								<li id="expWork" class="serv__def bef"><a href="#" onclick="play('expectWork')"><i class="fa fa-volume-up hidden"></i>Work</a></li>
-								<li id="expChallenges" class="serv__def bef"><a href="#" onclick="play('expectChallenges')"><i class="fa fa-volume-up hidden"></i>Challenges</a></li>
+								<li id="expPeople" class="serv__def bef"><a onclick="play('expectPeople')"><i class="fa fa-volume-up hidden"></i>People</a></li>
+								<li id="expSchedule" class="serv__def bef"><a onclick="play('expectSchedule')"><i class="fa fa-volume-up hidden"></i>Schedule</a></li>
+								<li id="expWork" class="serv__def bef"><a onclick="play('expectWork')"><i class="fa fa-volume-up hidden"></i>Work</a></li>
+								<li id="expChallenges" class="serv__def bef"><a onclick="play('expectChallenges')"><i class="fa fa-volume-up hidden"></i>Challenges</a></li>
 							</ul>
 						</div>
 						<div class="services__rgt col-sm-7">
@@ -57,11 +57,11 @@
     bc = document.querySelector('#playAudioBtns'),
     audiosprite = {
       'all': [ 0, 283],
-	  'clickhereto': [ 0, 33 ],
-      'expectPeople': [ 34, 86 ],
-      'expectSchedule': [ 87, 159 ],
-	  'expectWork': [ 160, 205 ],
-	  'expectChallenges': [ 206, 283 ]
+	  'clickhereto': [ 0, 33.5 ],
+      'expectPeople': [ 33.5, 86 ],
+      'expectSchedule': [ 86, 159 ],
+	  'expectWork': [ 159, 205 ],
+	  'expectChallenges': [ 205, 283 ]
     },
     end = 0;
 	
@@ -106,8 +106,8 @@ $(window).load(function(){
 						var myServTwo = setInterval(function(){
 							$('#expSchedule').removeClass('bef').addClass('selected');
 							$('#expSchedule i').removeClass('hidden');
-						},49000);
-						setInterval(function(){clearInterval(myServTwo);},49000);
+						},53000);
+						setInterval(function(){clearInterval(myServTwo);},53000);
 						
 						$(function(e){
 							var secondClick = true;
@@ -118,8 +118,8 @@ $(window).load(function(){
 									var myServThree = setInterval(function(){
 										$('#expWork').removeClass('bef').addClass('selected');
 										$('#expWork i').removeClass('hidden');
-									},69000);
-									setInterval(function(){clearInterval(myServThree);},69000);
+									},73000);
+									setInterval(function(){clearInterval(myServThree);},73000);
 									
 									$(function(e){
 										var thirdClick = true;
@@ -130,8 +130,8 @@ $(window).load(function(){
 												var myServThree = setInterval(function(){
 													$('#expChallenges').removeClass('bef').addClass('selected');
 													$('#expChallenges i').removeClass('hidden');
-												},42000);
-												setInterval(function(){clearInterval(myServThree);},42000);
+												},45000);
+												setInterval(function(){clearInterval(myServThree);},45000);
 												
 												$(function(e){
 													var fourthClick = true;
@@ -165,7 +165,7 @@ $(window).load(function(){
 			});	
 				
 			
-		}, 30000);
+		}, 33000);
 		
 	$(".mobile_playSound").click(function (e) {
 		jQuery(this).addClass("hidden");
